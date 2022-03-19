@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gage Lieble</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/bootstrap.css') }}">
+
+    <link rel="icon" href="static/Images/favicon.svg">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+</head>
+
+<body class="body">
+  <nav class="navbar navbar-expand-lg bg-transparent"> <!-- NAV -->
+    <div class="container-fluid" >
+      <a class="navbar-brand" href="#"><img id="brand" src="static/Images/GICON.svg"></a>
+      <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><img src="static/Images/NAVICON.svg"></span>
+      </button>
+      
+      <div style="overflow-y: hidden; height: 100px;"class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item fs-1">
+            <a class="nav-link text-white" href="#skills"><span class="comments">&#60;&#33;-</span>Skills<span class="comments">-&#62;<span class="comments"></span></a>
+          </li>
+          <li class="nav-item fs-1">
+            <a class="nav-link text-white" href="#projs"><span class="comments">&#60;&#33;-</span>Projects<span class="comments">-&#62;</span></a>
+          </li>
+          <li class="nav-item fs-1 ">
+            <a class="nav-link text-white" href="#contact"><span class="comments">&#60;&#33;-</span>Contact<span class="comments">-&#62;<span class="comments"></span></a>
+          </li>
+          <li class="nav-item fs-1">
+            <a class="nav-link text-white" href="#socials"><span class="comments">&#60;&#33;-</span>Socials<span class="comments">-&#62;</span></a>
+          </li>
+        </ul>
+        <!-- <div id="darkness" class="navbar-collapse"></div> -->
+        </div>
+      </div>
+    </div>
+  </nav>
+  </div>
+</div>
+
+</nav>
+  <div class="to_top">
+    <h1><a href="#">^</a></h1>
+  </div>
+  <section>
+  <h1 id="bio">Hello, I'm <br>Gage Lieble!<br> I currently live and work in Oregon</h1> <!-- TOP_BIO -->
+  <div id="centered_logo">
+  <img class="abstract w-75" src="static/Images/Sphere.png" alt="sphere">
+  <img class="glogo" id="skills" src="static/Images/headshot.jpg">
+</div>
+</section>
+
+<section> <!-- LANGUAGES -->
+    <h1 id="bio">My languages<br> HTML <span class="comments">-!&#62;</span><br> CSS <span class="comments">&#42;/</span><br> JAVASCRIPT <span class="comments">//</span><br> PYTHON <span class="comments">'''</span><br> DJANGO <span class="comments">#}</span></h1>
+</section>
+
+<section id="projs"> <!-- PROJECTS -->
+    <h1 id="titles">Projects</h1>
+    <div id="projcont">
+        <a href="https://github.com/PdxCodeGuild/class_kiwi/blob/main/Code/gage/python/Lab4-BlackjackAdvice.py" class="case" style="text-decoration: none; display: block; background-image: url(static/Images/Blackjack.jpg);"><h1 id="proj_titles">Black Jack advice<br><span class="comments" style="font-size: 20px;">python</span></h1></a>
+        <a href="https://github.com/PdxCodeGuild/class_kiwi/commit/1f9039bfb6406a71822d3f14496da5efb4e613fb" class="case" style="text-decoration: none; display: block; background-image: url(static/Images/Atm.jpg);"><h1 id="proj_titles">ATM<br><span class="comments" style="font-size: 20px;">python</span></h1></a>
+        <a href="https://github.com/PdxCodeGuild/class_kiwi/blob/main/Code/gage/python/Lab14-DadJokeAPI.py" class="case" style="text-decoration: none; display: block; background-image: url(static/Images/Dadjoke.jpg);"><h1 id="proj_titles">Dad joke API<br><span class="comments" style="font-size: 20px;">python</span></h1></a>
+        <a href="https://github.com/PdxCodeGuild/class_kiwi/blob/main/Code/gage/python/Lab9-ARI.py" class="case" style="text-decoration: none; display: block; background-image: url(static/Images/Api.jpg);"><h1 id="proj_titles">Automated Readability Index<br><span class="comments" style="font-size: 20px;">python</span></h1></a>
+    </div>
+</section>
+  <section id="contact"> <!-- CONTACT FORM -->
+<h1 id="bio" class="mx-auto text-center">Contact Me!</h1>
+<form class="row mx-0" action="/sent" method="post">
+  <input class="col-8 mx-auto mb-4 p-2 rounded-3" type="text" placeholder="Your email" name="contact_email" required>
+  <textarea class="col-8 mx-auto rounded-3" name="contact_description" id="contact_description" cols="30" rows="10" placeholder="Enter some details about your project" name="contact_details"></textarea>
+  <button class="rounded-3 col-8 mx-auto mt-4 p-2 bg-dark text-white" type="submit">Send</button>
+</form>
+  </section>
+  <section id="socials" class="row mt-5 w-75 mx-auto">
+    <a class="col-4" href="https://github.com/Gage-Lieble"><img class="w-75" src="static/Images/GITHUB.svg" alt="github_logo"></a>
+    <a class="col-4" href="https://www.linkedin.com/feed/"><img class="w-75"  src="static/Images/LINKEDIN.svg" alt="linkedin_logo"></a>
+    <a class="col-4" href="https://pdxcodeguild.com/"><img class="w-75"  src="static/Images/GRAD.svg" alt="pdxguild_school"></a>
+  </section>
+  <footer class="row mt-5 ms-0 me-0">
+    <p class="col-12 text-center text-white p-2 mb-0">Gage Lieble &copy; 2022</p>
+  </footer>
+  <svg> <!-- ANIMATION --> <!-- Credit : https://codepen.io/lgrqvst/pen/VgvNrG -->
+  <filter id="transmissionerror">
+    <feColorMatrix type="saturate" values="0" in="SourceGraphic" result="colormatrix1" />
+    <feColorMatrix type="matrix" values="1.0 0 0 0 0  0 0 0 0 0  0 0 1.0 0 0  0 0 0 0" in="colormatrix1" result="colormatrix2" />
+    <feTurbulence type="turbulence" baseFrequency="0.001 0.008" numOctaves="2" seed="5" stitchTiles="noStitch" result="turbulence">
+      <animate attributeName="baseFrequency" from="0.002 0.008" to="0.001 0.00" dur="13500ms" repeatCount="indefinite" />
+      <animate attributeName="numOctaves" from="1" to="100" dur="1750ms" repeatCount="indefinite" />
+      <animate attributeName="seed" from="1" to="100" dur="70s" repeatCount="indefinite" />
+    </feTurbulence>
+    <feColorMatrix type="saturate" values="30" in="turbulence" result="colormatrix3" />
+    <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 100 0" in="colormatrix3" result="colormatrix4" />
+    <feDisplacementMap in="colormatrix2" in2="colomatrix4" scale="3" xChannelSelector="R" yChannelSelector="A" result="displacementMap" />
+  </filter>
+</svg>
+</body>
+</html>

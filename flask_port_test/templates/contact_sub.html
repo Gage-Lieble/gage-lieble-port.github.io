@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Sent!</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/bootstrap.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body class="body">
+    <nav class="navbar navbar-expand-lg bg-transparent sticky-top"> <!-- NAV -->
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="#"><img id="brand" src="static/Images/GICON.svg"></a>
+          <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><img src="static/Images/NAVICON.svg"></span>
+          </button>
+          
+          <div style="overflow-y: hidden; height: 100px;"class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item fs-1 ">
+                <a class="nav-link text-white" href="/"><span class="comments">&#60;&#33;-</span>Home<span class="comments">-&#62;<span class="comments"></span></a>
+              </li>
+              
+            </ul>
+            
+            </div>
+          </div>
+        </div>
+      </nav>
+      </div>
+    </div>
+    
+  </nav>
+  
+    <h1 id="bio" class="color-white">Your contact information has been sent! I'll be in contact with you soon. Thanks for reaching out. </h1>
+    <div class="row">
+    <a href="/"><button class="rounded-3 col-8 mx-auto mt-4 p-2 bg-dark text-white" href="/">Home</button></a>
+    </div>
+    <h1 id="titles" class="fs-3 text-dark">{{ cont_email }}</h1>
+    <h1 id="titles" class="fs-3 text-dark">{{ cont_desc }}</h1>
+</body>
+</html>
