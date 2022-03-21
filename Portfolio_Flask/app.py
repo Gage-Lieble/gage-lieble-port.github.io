@@ -6,7 +6,7 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/sent", methods=['post'])
+@app.route("/sent", methods=['post', 'get'])
 def sent():
     with open('contact.json', 'a') as contacts:
         cont_email = request.form["contact_email"]

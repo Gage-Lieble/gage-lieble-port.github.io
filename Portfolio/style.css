@@ -7,7 +7,28 @@
     width: 100vw;
    
 }
+.to_top {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.to_top > h1 > a {
+    display: block;
+    /* color: rgb(144, 221, 144); */
+    color: white;
+    text-decoration: none;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(22, 22, 22);
 
+}
+.to_top > h1 {
+    
+    font-size: 60px;
+    margin-right: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
 a{
     text-align: center;
     color: white;
