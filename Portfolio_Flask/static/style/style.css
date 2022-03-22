@@ -8,6 +8,37 @@
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(15, 15, 15);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(58, 58, 58);
+    border: 5px solid rgb(22, 22, 22);
+    border-radius: 100vw;
+    max-width: 10px;
+}
+
+.error_body>h1 {
+    color: white;
+}
+
+.error_body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Images/TOPO.svg);
+    background-color: rgb(22, 22, 22);
+    background-repeat: repeat;
+    background-size: 50%;
+}
+
 .to_top {
     display: flex;
     justify-content: end;
@@ -185,6 +216,27 @@ svg {
 }
 
 @media screen and (min-width: 992px) {
+    #proj_titles:hover {
+        background-color: rgb(31, 31, 31, .85);
+    }
+    #sent_cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+    }
+    #sent_cont>h1 {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    #sent_cont>.row>a>button {
+        width: 100px;
+    }
     #down_arrow {
         display: block;
         font-size: 50px;
@@ -227,8 +279,6 @@ svg {
         text-align: center;
         width: 100%;
         font-size: 50px;
-        /* -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: rgb(31, 31, 31); */
     }
     #head_bio {
         display: flex;

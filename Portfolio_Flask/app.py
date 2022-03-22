@@ -16,3 +16,6 @@ def sent():
     
     return render_template("contact_sub.html", cont_email=cont_email, cont_desc=cont_desc)
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
