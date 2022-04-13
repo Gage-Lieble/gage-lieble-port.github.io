@@ -11,10 +11,10 @@ HOW TO RUN LOCALLY:
 
 DJANGO: <---- Main Files for gagelieble.com
 You must be in the file directory that contains 'manage.py' inorder to run this project locally. The 'portfolio_proj', 'portfolio_app', 'templates', and static files must also be present in this directory. After installing djanog on your machine you can enter the following into your terminal.
--WINDOWS: py -m manage runserver
--MAC: manage.py runserver
--Shift click on 'http://127.0.0.1:8000/' in your terminal
-This will open a tab in your default broswer with this project!
+- WINDOWS: py -m manage runserver
+- MAC: manage.py runserver
+- Shift click on 'http://127.0.0.1:8000/' in your terminal
+- This will open a tab in your default broswer with this project!
 
 FLASK: <---- Version 1 of gagelieble.com - No longer the Main Files
 In order to view the site you must have the app.py file in the directory. inside the directory you must also have a 'templates' folder and a 'static' folder. Place the HTML files in the template folder. Inside the static folder, place the 'Images' folder and the 'style' folder. the 'style' folder must include style.css and bootstrap.css.
