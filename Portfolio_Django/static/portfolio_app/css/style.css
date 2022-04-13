@@ -1,0 +1,421 @@
+#brand {
+    width: 50px;
+}
+
+.body {
+    background-color: rgb(22, 22, 22);
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+::selection {
+    background-color: rgb(144, 221, 144);
+    opacity: 50%;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(15, 15, 15);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(58, 58, 58);
+    border: 5px solid rgb(22, 22, 22);
+    border-radius: 100vw;
+    max-width: 10px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------- */
+
+.error_body>h1 {
+    color: white;
+}
+
+.error_body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Images/TOPO.svg);
+    background-color: rgb(22, 22, 22);
+    background-repeat: repeat;
+    background-size: 50%;
+}
+
+.to_top {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.to_top>h1>a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.to_top>h1 {
+    font-size: 60px;
+    margin-right: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+a {
+    text-align: center;
+    color: white;
+}
+
+#navbarSupportedContent {
+    background-color: rgb(22, 22, 22);
+    z-index: 10;
+}
+
+.abstract {
+    width: 100%;
+    position: relative;
+    display: block;
+    opacity: 75%;
+    filter: url(#transmissionerror)
+}
+
+.glogo {
+    width: 50%;
+    display: block;
+    border: 4px solid rgb(144, 221, 144);
+    border-radius: 100%;
+    position: absolute;
+}
+
+#centered_logo {
+    margin: 50px 0px 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bio {
+    width: 75%;
+    font-size: 35px;
+    margin: 30px;
+    color: white;
+}
+
+#bio_who {
+    width: 75%;
+    font-size: 35px;
+    margin: 30px;
+    color: white;
+}
+
+#bio_sml {
+    width: 75%;
+    font-size: 20px;
+    margin: 30px;
+    color: white;
+}
+
+.comments {
+    color: rgb(144, 221, 144);
+}
+
+#titles {
+    font-size: 35px;
+    margin: 30px;
+    color: white;
+    text-align: center;
+}
+
+#projs {
+    margin-top: 100px;
+    padding-top: 10px;
+    background-color: rgb(31, 31, 31);
+}
+
+.case {
+    width: 85%;
+    height: 200px;
+    border: 4px solid white;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+}
+
+#caseone {
+    background-image: url("/static/portfolio_app/images/Blackjack.jpg");
+}
+
+#casetwo {
+    background-image: url("/static/portfolio_app/images/Atm.jpg");
+}
+
+#casethree {
+    background-image: url("/static/portfolio_app/images/Dadjoke.jpg");
+}
+
+#casefour {
+    background-image: url("/static/portfolio_app/images/Api.jpg");
+}
+
+#projcont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#proj_titles {
+    font-size: 25px;
+    margin: 30px;
+    color: white;
+    text-align: center;
+    background-color: rgb(31, 31, 31, .75);
+    padding: 20px;
+}
+
+#contact_cont {
+    width: 75%;
+    overflow-x: hidden;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 4px solid rgb(144, 221, 144);
+}
+
+button {
+    border: 4px solid rgb(144, 221, 144);
+}
+
+#id_email {
+    border-radius: 5px;
+    border: 4px solid white;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+label {
+    color: white;
+}
+
+#id_message {
+    border: 4px solid white;
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: rgb(31, 31, 31);
+    width: 100vw;
+}
+
+svg {
+    display: none;
+}
+
+#image_slide {
+    display: none;
+}
+
+#sphere_icon {
+    width: 75%;
+}
+
+#down_arrow {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    #moreabout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin: 0 auto;
+    }
+    #bio_who {
+        text-align: center;
+    }
+    #bio_sml {
+        text-align: center;
+    }
+    #aboutcontact {
+        width: 500px;
+    }
+    .glogo {
+        width: 40%;
+    }
+    #centered_logo {
+        width: 65%;
+        margin: 0 auto;
+    }
+    #bio {
+        width: 250px;
+    }
+    #languages {
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #image_slide {
+        display: block;
+        width: 25%;
+        filter: grayscale();
+    }
+    .case {
+        max-width: 500px;
+    }
+    #socials>a {
+        width: 20%;
+        margin: 0 auto;
+    }
+    #languages {
+        padding-top: 100px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #moreabout {
+        min-width: 60%;
+    }
+    #bio_who {
+        font-size: 50px;
+    }
+    #bio_sml {
+        font-size: 30px;
+    }
+    #proj_titles:hover {
+        background-color: rgb(31, 31, 31, .85);
+    }
+    #sent_cont {
+        background-image: url("/static/portfolio_app/images/TOPO.svg");
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+    }
+    #sent_cont>h1 {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    #sent_cont>.row>a>button {
+        width: 100px;
+    }
+    #down_arrow {
+        display: block;
+        font-size: 50px;
+        padding: 10px;
+    }
+    #down_arrow>a {
+        color: white;
+        text-decoration: none;
+    }
+    #head_sec {
+        background-image: url("/static/portfolio_app/images/TOPO.svg");
+        background-color: rgb(22, 22, 22, 0.5);
+        background-repeat: repeat;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    #sphere_icon {
+        width: 100%;
+    }
+    .glogo {
+        width: 75%;
+    }
+    #centered_logo {
+        max-width: 500px;
+        margin: 0 auto;
+        position: relative;
+    }
+    #bio {
+        z-index: 50;
+        width: 350px;
+        font-size: 50px;
+    }
+    #head_bio>#bio {
+        float: left;
+        z-index: 50;
+        text-align: center;
+        width: 100%;
+        font-size: 50px;
+    }
+    #head_bio {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #head_bio>h1>br {
+        content: " ";
+        display: none;
+    }
+    .to_top {
+        display: none;
+    }
+    ul>li>a {
+        font-size: 25px;
+    }
+    .navbar-brand {
+        padding-left: 25px;
+    }
+    #navbarSupportedContent {
+        display: inline;
+        max-width: fit-content;
+        margin-right: 20px;
+    }
+    #titles {
+        font-size: 50px;
+    }
+    #proj_titles {
+        font-size: 35px;
+    }
+    #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact>form {
+        max-width: 500px;
+    }
+    #socials {
+        display: flex;
+        justify-content: center;
+    }
+    #socials>a {
+        max-width: 100px;
+        margin: 0px;
+    }
+    #projs {
+        padding-bottom: 50px;
+    }
+    #projcont {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .case {
+        margin: 10px;
+        width: 40%;
+    }
+}
