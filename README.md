@@ -22,3 +22,7 @@ HTML/CSS only: In order to view the site you must have the index.html, style.css
 and it will open in your deafult broswer
 ^^^THIS SITE DOES NOT INCLUDE FUNCTIONING CONTACT FORM AS OF VERSION 1^^^
 
+
+Also to jsut view the site go to:
+www.gagelieble.com
+
