@@ -1,0 +1,21 @@
+<!DOCTYPE html> {% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-error</title>
+    <link rel="stylesheet" href="{% static 'portfolio_app/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'portfolio_app/css/bootstrap.css' %}">
+    <link rel="icon" href="{% static 'portfolio_app/images/favicon.svg' %}">
+    <meta name="author" content="Gage Lieble">
+
+</head>
+
+<body class="error_body" style="background-image: url('/static/portfolio_app/images/TOPO.svg');">
+    <h1 style="text-align: center; max-width: 750px;">I've had a lot of bots using my contact form :( so please resend your project details without the phrases "bot" "robot" "bucks". Thank you!</h1>
+    <a href="{% url 'portfolio_app:index'%}"><button class="rounded-3 col-8 mx-auto mt-4 p-2 bg-dark text-white w-100" href="/">Home</button></a>
+</body>
+
+</html>

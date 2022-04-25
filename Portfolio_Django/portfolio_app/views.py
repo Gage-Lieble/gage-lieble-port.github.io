@@ -21,7 +21,9 @@ def submitted(request):
             # user_mail = request.POST['email']
             # user_msg = request.POST['message']
             form = ContactForm(request.POST)
-            if form.is_valid():
+            if 'bot' in str(form).lower() or 'robot' in str(form).lower() or 'bucks' in str(form).lower():
+                return render(request, 'portfolio_app/contacterror.html')
+            elif form.is_valid():
                 form.save()
             
         #     send_mail(
@@ -31,4 +33,4 @@ def submitted(request):
         #         ['My_email'], 
         #         fail_silently=False,
         #     )
-        return render(request, 'portfolio_app/contact_sub.html')
+                return render(request, 'portfolio_app/contact_sub.html')
