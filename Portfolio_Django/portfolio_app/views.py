@@ -16,8 +16,11 @@ def index(request):
 def handle_not_found(request, exception):
     return render(request, 'portfolio_app/404.html')
 
+
 def submitted(request):
-        if request.method == 'POST':
+        if request.POST['g-recaptcha-response'] == '':
+            return render(request, 'portfolio_app/500.html')
+        elif request.method == 'POST':
             # user_mail = request.POST['email']
             # user_msg = request.POST['message']
             form = ContactForm(request.POST)

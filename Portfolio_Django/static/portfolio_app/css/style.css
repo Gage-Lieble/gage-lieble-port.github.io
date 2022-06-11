@@ -149,6 +149,10 @@ a {
     align-items: center;
     background-size: 100%;
 }
+
+#casesix {
+    background-image: url("/static/portfolio_app/images/Ds.jpg");
+}
 #casefive {
     background-image: url("/static/portfolio_app/images/Weather.jpg");
 }
@@ -216,6 +220,7 @@ label {
     width: 100%;
     height: 250px;
     border-radius: 5px;
+    margin-bottom: 25px;
 }
 
 footer {

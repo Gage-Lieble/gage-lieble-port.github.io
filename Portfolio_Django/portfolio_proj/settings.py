@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['www.gagelieble.com', 'gagelieble.com', '127.0.0.1:8000', '127.
 # Application definition
 
 INSTALLED_APPS = [
+    'captcha',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -131,3 +132,10 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
+
+# # Captcha
+
+RECAPTCHA_PUBLIC_KEY = '6LetAdofAAAAADH5Lk-2LILt6HmKNo1Ot3ef_CzE'
+RECAPTCHA_PRIVATE_KEY = '6LetAdofAAAAAKxSXRZmWxB4KCUnz4wefZ9Neu9s'
+
+RECAPTCHA_REQUIRED_SCORE = 0.85
