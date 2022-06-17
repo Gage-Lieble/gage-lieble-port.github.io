@@ -302,6 +302,7 @@ svg {
         font-size: 50px;
     }
     #bio_sml {
+        width: 50%;
         font-size: 30px;
     }
     #proj_titles:hover {
